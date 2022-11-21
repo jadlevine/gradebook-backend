@@ -1,4 +1,4 @@
-const { Student } = require('../models')
+const { Students } = require('../models')
 
 const GetStudents = async (req, res) => {
   try {

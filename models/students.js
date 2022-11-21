@@ -1,14 +1,14 @@
 'use strict'
 const { Model } = require('sequelize')
 module.exports = (sequelize, DataTypes) => {
-  class students extends Model {
+  class Students extends Model {
     /**
      * Helper method for defining associations.
      * This method is not a part of Sequelize lifecycle.
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      Students.belongsTo(modes.Users, { foreignKey: 'PK' })
+      Students.belongsTo(models.Users, { foreignKey: 'PK' })
       Students.hasMany(models.Courses, {
         as: 'studentscourses',
         through: models.StudentsCourses,
@@ -16,7 +16,7 @@ module.exports = (sequelize, DataTypes) => {
       })
     }
   }
-  students.init(
+  Students.init(
     {
       PK: DataTypes.INTEGER,
       name: DataTypes.STRING,
@@ -29,5 +29,5 @@ module.exports = (sequelize, DataTypes) => {
       tableName: 'students'
     }
   )
-  return students
+  return Students
 }
