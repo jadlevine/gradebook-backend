@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
@@ -19,7 +19,7 @@ module.exports = {
         type: Sequelize.STRING
       },
       gpa: {
-        type: Sequelize.NUMBER
+        type: Sequelize.DOUBLE
       },
       createdAt: {
         allowNull: false,
@@ -29,9 +29,9 @@ module.exports = {
         allowNull: false,
         type: Sequelize.DATE
       }
-    });
+    })
   },
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable('students');
+    await queryInterface.dropTable('students')
   }
-};
+}
