@@ -9,7 +9,7 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {}
   }
-  Studentscourses.init(
+  StudentsCourses.init(
     {
       PK: DataTypes.INTEGER,
       studentId: {
