@@ -9,14 +9,17 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      PK: {
-        type: Sequelize.INTEGER
-      },
+      // PK: {
+      //   type: Sequelize.INTEGER
+      // },
       name: {
         type: Sequelize.STRING
       },
       description: {
         type: Sequelize.STRING
+      },
+      creditHours: {
+        type: Sequelize.INTEGER
       },
       createdAt: {
         allowNull: false,
