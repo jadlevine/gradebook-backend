@@ -1,10 +1,9 @@
 const { Courses } = require('../models')
 
-
 const GetCourses = async (req, res) => {
   try {
-    const students = await Courses.findAll()
-    res.send(students)
+    const courses = await Courses.findAll()
+    res.send(courses)
   } catch (error) {
     return res.status(500).send(error.message)
   }
@@ -12,12 +11,12 @@ const GetCourses = async (req, res) => {
 
 const GetCourse = async (req, res) => {
   try {
-    const student = await Courses.findOne({
+    const course = await Courses.findOne({
       where: {
-        id: req.params.student_id
+        id: req.params.course_id
       }
     })
-    res.send(student)
+    res.send(course)
   } catch (error) {
     throw error
   }
@@ -25,8 +24,8 @@ const GetCourse = async (req, res) => {
 
 const CreateCourse = async (req, res) => {
   try {
-    const student = await Courses.create({ ...req.body })
-    res.send(student)
+    const course = await Courses.create({ ...req.body })
+    res.send(course)
   } catch (error) {
     return res.status(500).send(error.message)
   }
@@ -34,11 +33,11 @@ const CreateCourse = async (req, res) => {
 
 const UpdateCourse = async (req, res) => {
   try {
-    const student = await Courses.update(
+    const course = await Courses.update(
       { ...req.body },
-      { where: { id: req.params.student_id }, returning: true }
+      { where: { id: req.params.course_id }, returning: true }
     )
-    res.send(student)
+    res.send(course)
   } catch (error) {
     return res.status(500).send(error.message)
   }
@@ -46,10 +45,10 @@ const UpdateCourse = async (req, res) => {
 
 const DeleteCourse = async (req, res) => {
   try {
-    await Courses.destroy({ where: { id: req.params.student_id } })
+    await Courses.destroy({ where: { id: req.params.course_id } })
     res.send({
       msg: 'Student Deleted',
-      payload: req.params.student_id,
+      payload: req.params.course_id,
       status: 'Ok'
     })
   } catch (error) {
