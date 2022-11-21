@@ -10,7 +10,7 @@ module.exports = {
           studentId: 1,
           courseId: 1,
           score: 93,
-          letter: 'test letter 1',
+          letter: 'A',
           createdAt: new Date(),
           updatedAt: new Date()
         },
@@ -19,7 +19,7 @@ module.exports = {
           studentId: 2,
           courseId: 2,
           score: 95,
-          letter: 'test letter 1',
+          letter: 'A',
           createdAt: new Date(),
           updatedAt: new Date()
         },
@@ -28,7 +28,7 @@ module.exports = {
           studentId: 3,
           courseId: 3,
           score: 90,
-          letter: 'test letter 1',
+          letter: 'A',
           createdAt: new Date(),
           updatedAt: new Date()
         },
@@ -37,7 +37,7 @@ module.exports = {
           studentId: 4,
           courseId: 4,
           score: 80,
-          letter: 'test letter 1',
+          letter: 'B',
           createdAt: new Date(),
           updatedAt: new Date()
         }
