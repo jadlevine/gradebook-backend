@@ -1,7 +1,7 @@
 'use strict'
 const { Model } = require('sequelize')
 module.exports = (sequelize, DataTypes) => {
-  class Studentscourses extends Model {
+  class StudentsCourses extends Model {
     /**
      * Helper method for defining associations.
      * This method is not a part of Sequelize lifecycle.
@@ -35,5 +35,5 @@ module.exports = (sequelize, DataTypes) => {
       tableName: 'studentscourses'
     }
   )
-  return Studentscourses
+  return StudentsCourses
 }
