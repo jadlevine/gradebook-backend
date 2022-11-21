@@ -1,15 +1,21 @@
 {
   "development": {
+    "username": "eortiz65",
+    "password": "qwerty",
     "database": "gradebook_development",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "test": {
+    "username": "eortiz65",
+    "password": "qwerty",
     "database": "gradebook_test",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "production": {
+    "username": "eortiz65",
+    "password": "qwerty",
     "database": "gradebook_production",
     "host": "127.0.0.1",
     "dialect": "postgres"
