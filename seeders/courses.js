@@ -6,7 +6,6 @@ module.exports = {
       'courses',
       [
         {
-          // PK: 1,
           name: 'Bio 101',
           description: 'General Biology',
           creditHours: 3,
@@ -14,7 +13,6 @@ module.exports = {
           updatedAt: new Date()
         },
         {
-          // PK: 2,
           name: 'Math 101',
           description: 'Pre-algebra',
           creditHours: 3,
@@ -22,7 +20,6 @@ module.exports = {
           updatedAt: new Date()
         },
         {
-          // PK: 3,
           name: 'Phy 101',
           description: 'General Physics',
           creditHours: 4,
@@ -30,7 +27,6 @@ module.exports = {
           updatedAt: new Date()
         },
         {
-          // PK: 4,
           name: 'His 101',
           description: 'World history',
           creditHours: 2,

@@ -52,8 +52,6 @@ const GetStudent = async (req, res) => {
     })
     let gpa = gpaPoints / totalCreditHours
 
-    // console.log(`GPA: ${gpa}`)
-    // update student record with new gpa, response will have new object... send that one
     let studentId = parseInt(req.params.student_id)
     const studentUpdate = await Students.update(
       { gpa },
@@ -70,12 +68,6 @@ const GetStudent = async (req, res) => {
       include: [Courses]
     })
 
-    // let body = { gpa }
-    // let request = { body }
-    // let studentUpdate = UpdateStudent(gpa, student.id)
-    // // student = { ...student, gpa }
-
-    // // console.log(student)
     console.log(updatedStudent)
     res.json(updatedStudent)
   } catch (error) {

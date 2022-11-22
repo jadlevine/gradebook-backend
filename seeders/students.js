@@ -6,7 +6,6 @@ module.exports = {
       'students',
       [
         {
-          // PK: 1,
           name: 'Joe',
           email: 'joe99@mail.com',
           gpa: 3.5,
@@ -14,7 +13,6 @@ module.exports = {
           updatedAt: new Date()
         },
         {
-          // PK: 2,
           name: 'Schmoe',
           email: 'sc45@mail.com',
           gpa: 3.7,
@@ -22,7 +20,6 @@ module.exports = {
           updatedAt: new Date()
         },
         {
-          // PK: 3,
           name: 'Fulano',
           email: 'f13@mail.com',
           gpa: 3.3,
@@ -30,7 +27,6 @@ module.exports = {
           updatedAt: new Date()
         },
         {
-          // PK: 4,
           name: 'Sutana',
           email: 's65@mail.com',
           gpa: 3.1,
