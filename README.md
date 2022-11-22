@@ -52,7 +52,9 @@ For more details about the frontend app, see the repository on [GitHub](https://
 
 ## Future Updates
 
-- [ Enrolle specific students in specific courses ]
-- [ Update individual grades]
+- [ ] Enroll specific students in specific courses
+- [ ] Update individual grades
+- [ ] Implement Authorization
+- [ ] Deploy on Heroku
 
 ## Credits
