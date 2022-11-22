@@ -1,4 +1,4 @@
-const { Courses } = require('../models')
+const { Courses, Students } = require('../models')
 
 const GetCourses = async (req, res) => {
   try {
@@ -14,7 +14,8 @@ const GetCourse = async (req, res) => {
     const course = await Courses.findOne({
       where: {
         id: req.params.course_id
-      }
+      },
+      include: [Students]
     })
     res.send(course)
   } catch (error) {
