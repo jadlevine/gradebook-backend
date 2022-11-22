@@ -1,6 +1,6 @@
 # GradeBook (backend)
 
-A grade keeping app for teachers and administrators to manage their courses
+A grade keeping app for teachers and administrators to manage their courses and students.
 
 ## Contributors
 
@@ -21,10 +21,7 @@ For more details about the frontend app, see the repository on [GitHub](https://
 
 ## Screenshots of App
 
-![Register/Login]() </br>
-![User Home]() </br>
-![Course Details]() </br>
-![Student Details]() </br>
+![](assets/ERD.jpg)
 
 ## Getting Started
 
@@ -35,18 +32,11 @@ For more details about the frontend app, see the repository on [GitHub](https://
 
 ## Technologies Used
 
-- Frontend Development
-  - HTML
-  - CSS
-  - JS
-  - React
-  - Node JS
-- Backend Development
-  - Postgresql
-  - Sequelize
-  - Express
-- Deployment
-  - Heroku
+- PostgreSQL + Sequelize
+- Express.js
+- React
+- Node.js
+- JavaScript
 
 ## Future Updates
 
@@ -54,5 +44,3 @@ For more details about the frontend app, see the repository on [GitHub](https://
 - [ ] Update individual grades
 - [ ] Implement Authorization
 - [ ] Deploy on Heroku
-
-## Credits
