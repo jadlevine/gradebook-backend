@@ -52,9 +52,7 @@ For more details about the frontend app, see the repository on [GitHub](https://
 
 ## Future Updates
 
-- [ ]
-- [ ]
+- [ Enrolle specific students in specific courses ]
+- [ Update individual grades]
 
 ## Credits
-
-[Validator Library](https://github.com/validatorjs/validator.js)
