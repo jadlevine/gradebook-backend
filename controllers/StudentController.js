@@ -1,4 +1,4 @@
-const { Students, Courses } = require('../models')
+const { Students, Courses, StudentsCourses } = require('../models')
 
 const GetStudents = async (req, res) => {
   try {
@@ -16,6 +16,7 @@ const GetStudent = async (req, res) => {
         id: req.params.student_id
       },
       include: [Courses]
+      // include: [Courses, StudentsCourses]
     })
     res.send(student)
   } catch (error) {
