@@ -2,8 +2,10 @@ const { StudentsCourses } = require('../models')
 
 const GetStudentsFromCourse = async (req, res) => {
   try {
+    let courseId = parseInt(req.params.course_id)
     const students = await StudentsCourses.findAll({
-      include: [{ model: Courses, as: 'courseId' }]
+      where: { courseId }
+      // include: [{ model: Courses, as: 'courseId' }]
     })
     res.send(students)
   } catch (error) {
@@ -13,8 +15,10 @@ const GetStudentsFromCourse = async (req, res) => {
 
 const GetCoursesFromStudent = async (req, res) => {
   try {
+    let studentId = parseInt(req.params.student_id)
     const courses = await StudentsCourses.findAll({
-      include: [{ model: Students, as: 'studentId' }]
+      where: { studentId }
+      // include: [{ model: Courses, as: 'courseId' }]
     })
     res.send(courses)
   } catch (error) {

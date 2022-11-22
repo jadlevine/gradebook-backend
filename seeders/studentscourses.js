@@ -6,7 +6,7 @@ module.exports = {
       'studentscourses',
       [
         {
-          PK: 1,
+          // PK: 1,
           studentId: 1,
           courseId: 1,
           score: 93,
@@ -15,7 +15,43 @@ module.exports = {
           updatedAt: new Date()
         },
         {
-          PK: 2,
+          // PK: 4,
+          studentId: 1,
+          courseId: 2,
+          score: 80,
+          letter: 'B',
+          createdAt: new Date(),
+          updatedAt: new Date()
+        },
+        {
+          // PK: 4,
+          studentId: 1,
+          courseId: 3,
+          score: 80,
+          letter: 'B',
+          createdAt: new Date(),
+          updatedAt: new Date()
+        },
+        {
+          // PK: 4,
+          studentId: 1,
+          courseId: 4,
+          score: 80,
+          letter: 'B',
+          createdAt: new Date(),
+          updatedAt: new Date()
+        },
+        {
+          // PK: 4,
+          studentId: 2,
+          courseId: 1,
+          score: 80,
+          letter: 'B',
+          createdAt: new Date(),
+          updatedAt: new Date()
+        },
+        {
+          // PK: 2,
           studentId: 2,
           courseId: 2,
           score: 95,
@@ -24,7 +60,16 @@ module.exports = {
           updatedAt: new Date()
         },
         {
-          PK: 3,
+          // PK: 4,
+          studentId: 3,
+          courseId: 1,
+          score: 80,
+          letter: 'B',
+          createdAt: new Date(),
+          updatedAt: new Date()
+        },
+        {
+          // PK: 3,
           studentId: 3,
           courseId: 3,
           score: 90,
@@ -33,7 +78,16 @@ module.exports = {
           updatedAt: new Date()
         },
         {
-          PK: 4,
+          // PK: 4,
+          studentId: 4,
+          courseId: 1,
+          score: 80,
+          letter: 'B',
+          createdAt: new Date(),
+          updatedAt: new Date()
+        },
+        {
+          // PK: 4,
           studentId: 4,
           courseId: 4,
           score: 80,
